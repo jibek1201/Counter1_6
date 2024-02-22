@@ -12,11 +12,11 @@ class MainViewModel : ViewModel() {
         get() = _counterLv
 
     fun inc() {
-        _counterLv.value = count++
+        _counterLv.value = ++count
     }
 
     fun dec() {
-        _counterLv.value = count--
+        _counterLv.value = --count
     }
 
 }
